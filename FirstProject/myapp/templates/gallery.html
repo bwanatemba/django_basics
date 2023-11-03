@@ -6,11 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gallery</title>
+
     {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
 </head>
 <body>
 
 <h1>My Gallery</h1>
+
+<a href="{% url 'home' %}" class="btn btn-success">Home</a>
+<a href="{% url 'gallery' %}" class="btn btn-success">Gallery</a>
+<a href="{% url 'aboutus' %}" class="btn btn-success">About Us</a>
+
+<br><br>
 
 <img src="{% static 'images/avengers.jpg' %}" alt="">
 <img src="{% static 'images/avengers2.jpg' %}" alt="">

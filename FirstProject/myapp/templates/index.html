@@ -6,10 +6,21 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
 </head>
 <body>
 
 <h1>Welcome to Django Homepage</h1>
+<br><br>
+<button class="btn btn-primary"> Home</button>
+<button class="btn btn-danger"> About</button>
+<button class="btn btn-success"> Gallery</button>
+<button class="btn btn-dark"> Services</button>
+<button class="btn btn-info"> Contact Us</button>
 
 </body>
 </html>
